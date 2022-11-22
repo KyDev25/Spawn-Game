@@ -3,6 +3,7 @@ const start = document.getElementById("start");
 const order = document.getElementById("order");
 const victory = document.getElementById("victory");
 
+//Function to initialize buttons
 const initialization = () => {
   order.textContent = "";
   buttons.forEach((element) => {
@@ -10,6 +11,7 @@ const initialization = () => {
   });
 };
 
+//Function to determine buttons color, green is the victory and red the defeat
 const buttonColor = (buttonGreen) => {
   buttonGreen.style.background = "green";
   buttons.forEach((element) => {
@@ -17,6 +19,7 @@ const buttonColor = (buttonGreen) => {
   });
 };
 
+//Function to determine if user won or lost
 const statusVictory = (newRandomID) => {
   buttonGreen = document.getElementById("button" + newRandomID);
   buttons.forEach((element) => {
@@ -29,6 +32,7 @@ const statusVictory = (newRandomID) => {
   });
 };
 
+//When Start clicked, the game is on
 start.addEventListener("click", () => {
   initialization();
   newRandomID = Math.floor(Math.random() * 4 + 1);
