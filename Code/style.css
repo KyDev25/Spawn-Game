@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250px;
+}
+
+#victory {
+    color: white;
+}
+
+#order {
+    color: white;
+}
+
+.app h1 {
+    color: white;
+}
+
+.app table {
+    border: solid 2px black;
+    width: 25%;
+    margin-top: 15px;
+    border: solid 2px white;
+}
+
+.app table tr td {
+    border: solid 2px black;
+}
+
+.app table tr td button {
+    font-size: 100px;
+    width: 100%;
+    border-radius: 10px;
+    border: solid 2px rgb(93, 93, 105);
+    border-top: solid 2px rgb(194, 194, 42);
+    border-right: solid 2px rgb(194, 194, 42);
+    transition: 0.5s;
+}
+
+.app table tr td button:hover {
+    border: solid 2px rgb(93, 93, 105);
+    border-bottom: solid 2px rgb(194, 194, 42);
+    border-left: solid 2px rgb(143, 143, 39);
+    transform: scale(0.9);
+}
+
+#start {
+    background: white;
+    color: black;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+#start:hover {
+    transform: scale(1.1);
+    border: solid 2px black;
+    box-shadow: 0 0 2px 2px white;
+    background: rgb(242, 239, 239);
+}
